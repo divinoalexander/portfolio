@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Divino Alexander</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Expertise">Expertise</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Divino Alexander</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Expertise" onclick="toggleMenu()">Expertise</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.JPG" alt="Divino Alexander picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Divino Alexander</h1>
+            <p class="section__text__p2">Computer Science Fresher</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                 onclick="window.open('./assets/resume-example.pdf')">
+                 Download CV
+                </button>
+                <button class="btn btn-color-1"
+                 onclick="location.href='./#contact'">
+                 Contact Info
+                </button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                 alt="My linkedin profile" class="icon" 
+                 onclick="location.href='//linkedin.com/'">
+                 <img src="./assets/github.png"
+                 alt="My github profile" class="icon" 
+                 onclick="location.href='//github.com/divinoalexander'">        
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.webp" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>Fresher<br>Frontend Development<br>AI Engineer<br>Software Developer</p>
+                    </div>
+                    <div class="details-container"><img src="./assets/education.png" alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>CBSE 10th - 82%<br>CBSE 12th - 81%<br>BE Computer Science</p></div>
+                </div>
+                <div class="text-container">
+                    <p>A BE CSE student who knows Python is not just a snake.
+                        I build cool stuff—from AI chatbots that pretend to be smart to web apps that actually work.
+                        When I’m not debugging, I’m either playing football, strumming my guitar, or questioning my life choices after a failed deployment.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#Expertise'">
+    </section>
+    <section id="Expertise">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Expertise</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">FullStack Development</h2>
+                    <div class="article-container"></div>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>MERN</h3>
+                            <p>Basic</p>    
+                        </div>
+                    </article>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container"></div>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Data Sctructure</h3>
+                            <p>Intermediate</p>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>OOPS</h3>
+                            <p>Intermediate</p>    
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
+        alt="Arrow Icon" class="icon arrow" 
+        onclick="location.href='./#project'"/> 
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
